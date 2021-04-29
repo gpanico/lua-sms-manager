@@ -1,0 +1,5 @@
+#!/bin/sh
+# first we ensure that we have remserial connected to the dongle's serial port 
+remserial -d -p 23000 -s "9600 raw" /dev/ttyUSB0 &
+# fire lua interpreter
+lua $0.lua $1 $2
