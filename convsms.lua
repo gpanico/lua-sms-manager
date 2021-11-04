@@ -1,3 +1,5 @@
+-- converts the pointed sms from hex to ascii
+
 local socket = require "socket"
 local ip, port = "127.0.0.1", 23000
 local server, err = socket.connect(ip,port)
